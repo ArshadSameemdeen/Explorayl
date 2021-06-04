@@ -1,0 +1,535 @@
+/* Hero */
+.hero-text {
+  font-family: "Poppins bold" !important;
+  font-size: 30px !important;
+  color: #fff !important;
+  margin-top: 8em;
+}
+
+.hero-btn {
+  border: 3px solid #fff !important;
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.hero-btn:active {
+  border: 3px solid #fff !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.arrival {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 2em;
+}
+
+.arrival-icon {
+  margin-right: 1em;
+}
+
+.coupons-grid {
+  margin-top: 18px;
+  display: grid;
+  margin-left: 12px;
+  /* grid-template-columns: 0.3fr 0.3fr; */
+  grid-auto-rows: min-content;
+  justify-items: center;
+  height: 22em;
+  overflow: auto;
+}
+
+.ui-content {
+  /* border-width: 0; */
+  overflow: unset;
+  overflow-x: unset;
+  /* padding: 1em; */
+}
+
+.coupon-card {
+  background-image: url("./../../assets/images/coupon-bg.png");
+  background-size: 370px 100px;
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 77px 200px 70px;
+  grid-template-rows: 28px 28px 28px;
+  grid-template-areas:
+    "coupon-img coupon-name coupon-price"
+    "coupon-img coupon-validity coupon-price"
+    "coupon-img coupon-code coupon-price";
+}
+
+.coupon-img {
+  grid-area: coupon-img;
+  margin: 5px;
+}
+
+.coupon-name {
+  grid-area: coupon-name;
+  color: #748a9d !important;
+  font-size: 20px !important;
+  margin: 5px;
+}
+
+.coupon-price {
+  grid-area: coupon-price;
+  color: #748a9d !important;
+  margin: auto;
+  font-size: 20px !important;
+}
+
+.coupon-validity {
+  grid-area: coupon-validity;
+  color: #748a9d !important;
+  margin: 5px;
+}
+
+.coupon-code {
+  grid-area: coupon-code;
+  color: #748a9d !important;
+  margin: 5px;
+}
+
+.hero {
+  height: 105vh;
+  background-image: url("./../../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  border-radius: 0em 0em 2em 2em;
+  background-size: 110%;
+}
+
+/* Horizontal scroll */
+.pois-container {
+  width: 75vw;
+  display: flex;
+}
+
+.pois {
+  display: flex;
+  overflow: auto;
+  padding: 0 1em;
+}
+
+.pois::after {
+  content: "";
+  min-width: 0.1px;
+  height: 15em;
+  margin-right: 1em;
+  position: relative;
+}
+
+.poi {
+  min-width: 13em;
+  max-width: 13em;
+  height: 15em;
+  margin-right: 1em;
+  position: relative;
+}
+
+.poi:before {
+  border-radius: 1em;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.poi img {
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poi-img-icon-color {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(16%) saturate(116%)
+    hue-rotate(184deg) brightness(93%) contrast(82%);
+}
+
+.poi .poi-info {
+  padding: 1em;
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  left: 0px;
+}
+
+.poi .poi-info img {
+  width: 1em;
+}
+
+.order-field {
+  margin-top: 2em;
+}
+/* Other */
+.categories {
+  background: #fff;
+}
+.sub-total-card {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.total-card {
+  font: bold !important;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+.add-card-placeholder {
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card-list > div {
+  background-color: #9a7745;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  height: 12em;
+  width: 20em;
+  border-radius: 0.2em;
+}
+
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .pois-container {
+    width: 100vw;
+  }
+
+  .hero {
+    height: 85vh;
+  }
+
+  .hero-text {
+    margin-top: 10em;
+  }
+
+  .booking-fields {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .booking-fields {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+/* iPhone portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .pois-container {
+    width: 100vw;
+  }
+
+  .hero {
+    height: 76vh;
+  }
+
+  .hero-text {
+    margin: 0 0 10.5em 0;
+  }
+
+  .coupon-img {
+    display: none;
+  }
+
+  .modal {
+    padding: 0 !important;
+    padding-right: 10px !important;
+  }
+
+  .coupon-card {
+    background-image: url(./../../assets/images/coupon-bg.png);
+    background-size: 370px 100px;
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 70px;
+    grid-template-rows: 28px 28px 28px;
+    grid-template-areas:
+      "coupon-name coupon-price"
+      "coupon-validity coupon-price"
+      "coupon-code coupon-price";
+  }
+}
+
+/* iPhone landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .hero {
+    height: 107vh;
+    background-size: 100%;
+    background-position: center 90%;
+  }
+
+  .hero-text {
+    margin-top: 4em;
+  }
+
+  .pois-container {
+    width: 82vw;
+  }
+}
+
+.train-animation {
+  /* position: relative; */
+  animation: drive 1.5s linear;
+}
+
+.coupon-btn {
+  width: 12em !important ;
+}
+
+.booking-fields {
+  /* margin-left: 5em;
+  margin-right: 5em; */
+  margin-bottom: 3em;
+}
+
+.side {
+  z-index: 2;
+}
+
+.deptInput input[type="text"] {
+  background-image: url("/assets/icons/input/arrow-up-right.svg");
+}
+
+.dateInput input[type="text"] {
+  background-image: url("/assets/icons/input/calendar.svg");
+}
+
+.passengerInput input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0px solid #ccc;
+  font-size: 16px;
+  background-color: #f0f4f8;
+  background-image: url("/assets/icons/input/users.svg");
+  background-position: 20px 0px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0px 25px 15px 60px;
+}
+
+.train {
+  /* margin-top: 2%; */
+  margin-bottom: 2%;
+}
+.train img {
+  width: 90%;
+  position: relative;
+  left: -40%;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+select {
+  display: none !important;
+}
+
+.dropdown-select {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
+  background-color: #fff;
+  border-radius: 6px;
+  border: solid 1px #eee;
+  box-shadow: 0px 2px 5px 0px rgba(155, 155, 155, 0.5);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+
+}
+
+.dropdown-select:focus {
+  background-color: #fff;
+}
+
+.dropdown-select:hover {
+  background-color: #fff;
+}
+
+.dropdown-select:active,
+.dropdown-select.open {
+  background-color: #f0f4f8 !important;
+  /* border-color: #bbb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset; */
+}
+
+.dropdown-select:after {
+  height: 0;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #777;
+  -webkit-transform: origin(50% 20%);
+  transform: origin(50% 20%);
+  transition: all 0.125s ease-in-out;
+  content: '';
+  display: block;
+  margin-top: -2px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.dropdown-select.open:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.dropdown-select.open .list {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-select.open .option {
+  cursor: pointer;
+}
+
+.dropdown-select.wide {
+  width: 100%;
+}
+
+.dropdown-select.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.dropdown-select .list {
+  box-sizing: border-box;
+  transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 4px;
+  padding: 3px 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  max-height: 250px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
+.dropdown-select .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+.dropdown-select .dd-search{
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0.5rem;
+}
+
+.dropdown-select .dd-searchbox{
+width:90%;
+padding:0.5rem;
+border:1px solid #999;
+border-color:#999;
+border-radius:4px;
+outline:none;
+}
+.dropdown-select .dd-searchbox:focus{
+border-color:#12CBC4;
+}
+
+.dropdown-select .list ul {
+  padding: 0;
+}
+
+.dropdown-select .option {
+  cursor: default;
+  font-weight: 400;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  transition: all 0.2s;
+  list-style: none;
+}
+
+.dropdown-select .option:hover,
+.dropdown-select .option:focus {
+  background-color: #f6f6f6 !important;
+}
+
+.dropdown-select .option.selected {
+  font-weight: 600;
+  color: #12cbc4;
+}
+
+.dropdown-select .option.selected:focus {
+  background: #f6f6f6;
+}
+
+.dropdown-select a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-select a:hover {
+  color: #666;
+}
+#ui-id-1-button{
+  display: none;
+}
+#dept-button{
+  display: none ;
+}

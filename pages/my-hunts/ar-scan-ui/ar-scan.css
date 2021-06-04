@@ -1,0 +1,310 @@
+@media only screen and (max-width: 1024px) {
+  #container {
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #videoElement {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+    width: 135vh;
+    object-fit: cover;
+    background-color: black;
+  }
+  #logo {
+    position: absolute;
+    top: 220px;
+    left: 390px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+  }
+  #scan-layout-bg {
+    position: absolute;
+    bottom: -1px;
+  }
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .background.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    /* top: -1000px !important; */
+    top: 900px;
+    /* top: 0px !important; */
+  }
+  #info-text {
+    margin: 2px;
+    font-size: 20px !important;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+  }
+  .background.vertTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    top: -900px !important;
+    /* top: 0px !important; */
+  }
+  #map-container {
+    height: 50%;
+    width: 40%;
+    border-radius: 250%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -120px;
+    left: 750px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #container {
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #info-text {
+    margin: 2px;
+    font-size: 20px !important;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+  }
+  #map-container {
+    height: 40vh;
+    width: 100%;
+    border-radius: 90%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -220px;
+    left: 0px;
+  }
+  #videoElement {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+    width: 75vh;
+    object-fit: cover;
+    background-color: black;
+  }
+  #logo {
+    position: absolute;
+    top: 350px;
+    left: 250px;
+  }
+  .background.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    /* top: -1000px !important; */
+    top: 1200px;
+    /* top: 0px !important; */
+  }
+  #scan-layout-bg {
+    position: absolute;
+    bottom: -1px;
+    height: 150vh;
+  }
+ 
+  .background.vertTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    top: -900px !important;
+    /* top: 0px !important; */
+  }
+}
+
+/* iPhone portrait ----------------------------------------------------------------------  */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  #logo {
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    height: 150px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+  }
+  #map-container {
+    height: 40vh;
+    width: 100%;
+    border-radius: 90%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -120px;
+    left: 0px;
+  }
+  #info-text {
+    margin: 2px;
+    font-size: 13px !important;
+  }
+  #videoElement {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+    width: 60vh;
+    object-fit: cover;
+    background-color: black;
+  }
+  #scan-layout-bg {
+    position: absolute;
+    bottom: 0px;
+    height: 140vh;
+  }
+
+  .background.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    /* top: -1000px !important; */
+    top: 800px !important;
+    /* top: 0px !important; */
+  }
+  .background.vertTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    top: -800px !important;
+    /* top: 0px !important; */
+  }
+}
+
+/* iPhone landscape ----------------------------------------------------------------------  */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #logo {
+    position: absolute;
+    top: 120px;
+    left: 260px;
+    height: 150px;
+  }
+  #map-container {
+    height: 70%;
+    width: 40%;
+    border-radius: 250%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -108px;
+    left: 480px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+  }  #info-text {
+    margin: 2px;
+    font-size: 13px !important;
+  }
+  #videoElement {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    object-fit: cover;
+    background-color: black;
+  }
+  #scan-layout-bg {
+    position: absolute;
+    bottom: 0px;
+    height: 575vh;
+    width: 867px;
+  }
+  .background.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    /* top: -1000px !important; */
+    top: 410px !important;
+    /* top: 0px !important; */
+  }
+  .background.vertTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    top: -410px !important;
+    /* top: 0px !important; */
+  }
+}

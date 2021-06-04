@@ -1,0 +1,176 @@
+{
+  "email": "arshad@gmail.com",
+  "password": "arshad6969",
+  "username": "Arshad Sameemdeen",
+  "totalPoints": 1000,
+  "position": 9,
+  "collectables": 2,
+  "travelDistance": "200 KM",
+  "taskCompleted": 3,
+  "tickets": [
+    {
+      "ticketId": 1,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "01/05/2021",
+      "seats": 2,
+      "price": 20
+    },
+    {
+      "ticketId": 2,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "02/05/2021",
+      "seats": 5,
+      "price": 50
+    },
+    {
+      "ticketId": 3,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "01/05/2021",
+      "seats": 2,
+      "price": 20
+    },
+    {
+      "ticketId": 4,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "02/05/2021",
+      "seats": 5,
+      "price": 50
+    },
+    {
+      "ticketId": 5,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "01/05/2021",
+      "seats": 2,
+      "price": 20
+    },
+    {
+      "ticketId": 6,
+      "from": "Paddington",
+      "to": "Victoria",
+      "departureDate": "02/05/2021",
+      "seats": 5,
+      "price": 50
+    }
+  ],
+  "coupons": [
+    {
+      "name": "Powder Monkey",
+      "code": "POWM2021",
+      "expiryDate": "02/05/2021",
+      "amount": 20
+    },
+    {
+      "name": "Ice Monkey",
+      "code": "POWM2022",
+      "expiryDate": "02/05/2021",
+      "amount": 18
+    },
+    {
+      "name": "New Monkey",
+      "code": "POWM2021",
+      "expiryDate": "02/05/2021",
+      "amount": 10
+    },
+    {
+      "name": "Awesome Monkey",
+      "code": "POWM2081",
+      "expiryDate": "02/05/2021",
+      "amount": 15
+    },
+    {
+      "name": "Old Monkey",
+      "code": "POWM2020",
+      "expiryDate": "02/05/2021",
+      "amount": 20
+    }
+  ],
+  "placesUnlocked": 4,
+  "ranking": 4,
+  "upcomingHunts": [
+    {
+      "img_url": "./../../assets/images/pois/british-museum.jpg",
+      "name": "British Museum",
+      "location": "London",
+      "rating": 4.78,
+      "price": 100
+    },
+    {
+      "img_url": "./../../assets/images/pois/british-museum.jpg",
+      "name": "British Museum",
+      "location": "London",
+      "rating": 4.78,
+      "price": 100
+    }
+  ],
+  "pastHunts": [
+    {
+      "img_url": "./../../assets/images/pois/british-museum.jpg",
+      "name": "British Museum",
+      "location": "London",
+      "rating": 4.78,
+      "pts": 100
+    },
+    {
+      "img_url": "./../../assets/images/pois/british-museum.jpg",
+      "name": "British Museum",
+      "location": "London",
+      "rating": 4.78,
+      "pts": 100
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Nasif Nuha",
+      "rating": 3,
+      "review": "Nice"
+    },
+    {
+      "name": "Amjad Nazar",
+      "rating": 2,
+      "review": "Good experience"
+    }
+  ],
+  "otherUsers": [
+    {
+      "name": "John Doyle",
+      "points": 1500
+    },
+    {
+      "name": "Naruto Uzamaki",
+      "points": 700
+    },
+    {
+      "name": "Sheldon Cooper",
+      "points": 550
+    },
+    {
+      "name": "S Sulaiman",
+      "points": 1200
+    },
+    {
+      "name": "Thomas Shelby",
+      "points": 400
+    },
+    {
+      "name": "Tobey Maguire",
+      "points": 750
+    },
+    {
+      "name": "Mufthi Menk",
+      "points": 600
+    },
+    {
+      "name": "Mohomed Sameemdeen",
+      "points": 650
+    },
+    {
+      "name": "Fazal Appa",
+      "points": 500
+    }
+  ]
+}

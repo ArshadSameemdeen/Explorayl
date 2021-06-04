@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>XploRayl</title>
+    <link rel="icon" type="image/png" href="./../../favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./my-hunts.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+
+    <script src="./../../script.js"></script>
+    <script src="./my-hunts.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- Sidebar start -->
+      <div class="side">
+        <div class="ui-content center-column">
+          <img
+            class="header-logo-sidebar"
+            src="./../../assets/images/logos/full logo black color.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="sidebar-nav-btn">
+            <a
+              class="anchor-external"
+              href="./../explore/explore.html"
+              data-prefetch="true"
+            >
+              <div class="sidebar-nav-btn-contents">
+                <img src="./../../assets/icons/compass.svg" alt="" />
+                <span>Explore</span>
+              </div>
+            </a>
+          </div>
+          <div class="sidebar-nav-btn">
+            <a
+              class="anchor-external"
+              href="./../search/search.html"
+              data-prefetch="true"
+            >
+              <div class="sidebar-nav-btn-contents">
+                <img src="./../../assets/icons/search.svg" alt="" />
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+          <div class="sidebar-nav-btn-active">
+            <a href="#">
+              <div class="sidebar-nav-btn-contents">
+                <img
+                  class="sidebar-nav-btn-content-active"
+                  src="./../../assets/icons/x white.svg"
+                  alt=""
+                />
+                <span class="sidebar-nav-btn-content-active">My Hunts</span>
+              </div>
+            </a>
+          </div>
+          <div class="sidebar-nav-btn">
+            <a
+              class="anchor-external"
+              href="./../leaderboard/leaderboard.html"
+              data-prefetch="true"
+            >
+              <div class="sidebar-nav-btn-contents">
+                <img
+                  class=""
+                  src="./../../assets/icons/bar-chart-2.svg"
+                  alt=""
+                />
+                <span>Leaderboard</span>
+              </div>
+            </a>
+          </div>
+          <div class="sidebar-nav-btn">
+            <a
+              class="anchor-external"
+              href="./../profile/profile.html"
+              data-prefetch="true"
+            >
+              <div class="sidebar-nav-btn-contents">
+                <img class="" src="./../../assets/icons/user.svg" alt="" />
+                <span>Profile</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+      <div class="wrapper">
+        <div class="main">
+          <!-- Header start -->
+          <div class="header" data-role="header">
+            <img
+              class="header-logo"
+              src="./../../assets/images/logos/full logo black color.png"
+              alt=""
+            />
+          </div>
+          <!-- Header end -->
+
+          <!-- content start -->
+          <div>
+            <div id="profile-header" class="hunt-header">
+              <h1 class="hunt-tab-title">My Hunt</h1>
+            </div>
+
+            <div data-role="tabs" id="tab-item">
+              <div data-role="navbar">
+                <ul id="unlisted-view" data-inset="true">
+                  <li id="list-view">
+                    <a
+                      class="tab-nav active"
+                      href="#tab-one"
+                      data-theme="a"
+                      data-ajax="false"
+                      >Ongoing</a
+                    >
+                  </li>
+                  <li id="list-view">
+                    <a
+                      class="tab-nav"
+                      href="#tab-two"
+                      data-theme="a"
+                      data-ajax="false"
+                      >Upcoming</a
+                    >
+                  </li>
+                  <li id="list-view">
+                    <a
+                      class="tab-nav"
+                      href="#tab-three"
+                      data-theme="a"
+                      data-ajax="false"
+                      >Past</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div id="tab-one" class="hunt-home">
+                <div class="hunt-info">
+                  <h1
+                    style="
+                      position: relative;
+                      color: white !important;
+                      top: 60%;
+                    "
+                    class=""
+                  >
+                    Seagull Hunt
+                  </h1>
+                  <div
+                    style="
+                      position: relative;
+                      color: white !important;
+                      top: 60%;
+                    "
+                  >
+                    <div
+                      style="display: grid; grid-template-columns: 30px 250px"
+                    >
+                      <img
+                        style="padding-right: 12px"
+                        class="sidebar-nav-btn-content-active"
+                        src="./../../assets/icons/map-pin.svg"
+                        alt=""
+                      />
+                      <p id="hunt-location">London Eye</p>
+                    </div>
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: 30px 250px;
+                        margin-top: 3px;
+                      "
+                    >
+                      <img
+                        class="sidebar-nav-btn-content-active"
+                        src="./../../assets/images/calendar.png"
+                        alt=""
+                      />
+                      <p id="hunt-date">20th Sept 2020</p>
+                    </div>
+                  </div>
+                  <div class="scan-button">
+                    <a href="#common-modal" rel="modal:open">
+                      <button class="ui-btn">SCAN</button></a
+                    >
+                  </div>
+                </div>
+                <div class="body-content">
+                  <div id="common-modal" class="modal ui-modal">
+                    <h1
+                      class="center-column center-row"
+                      id="scan-ticket-heading"
+                    >
+                      Scan Ticket
+                    </h1>
+                    <p class="center-column center-row">
+                      Scan the ticket at the station terminal
+                    </p>
+                    <div class="center-row center-column">
+                      <img
+                        src="/assets/images/qr-code.png"
+                        id="qr-code-size"
+                        alt=""
+                      />
+                    </div>
+                    <a class="anchor-external" href="./my-hunts-final.html">
+                      <button
+                        class="ui-btn close-modal scan-done"
+                        style="margin-left: 5em"
+                      >
+                        DONE
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <!-- Footer start -->
+                <div class="footer ui-content">
+                  <div class="footer-logo-container center-column">
+                    <img
+                      class="footer-logo"
+                      src="./../../assets/images/logos/full logo white.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact-us-container">
+                    <div class="footer-heading-text">Contact Us</div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/phone-call.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;+44 7911 123456</span>
+                    </div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/mail.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;info@xploray.com</span>
+                    </div>
+                  </div>
+                  <div class="follow-us-container">
+                    <div class="footer-heading-text">Follow Us</div>
+                    <div class="center-vertically-margin-top">
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/facebook-logo.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/twitter-social-logotype.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/instagram-social-network-logo-of-photo-camera.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="newsletter-container">
+                    <div class="footer-heading-text">Newsletter</div>
+                    <div class="card2-text center-vertically-margin-top">
+                      Stay up to date on the latest hunts
+                    </div>
+
+                    <div class="form-group footerInput">
+                      <fieldset id="">
+                        <input
+                          type="text"
+                          name=""
+                          id="emailFooter"
+                          class="form-control placeholder-text"
+                          placeholder="example@email.com"
+                        />
+                      </fieldset>
+                    </div>
+
+                    <button class="ui-btn subscribe-btn">SUBSCRIBE</button>
+                  </div>
+                  <div class="copyright-container center-column">
+                    <div class="footer-address-text">
+                      XPLORAYL . 31 Moulton Road Street . Guestling Thorn . TN35
+                      4YX UK
+                    </div>
+                    <div class="footer-copyright-text">
+                      Copyright ©️ 2020 All Rights Reserved
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer end -->
+              </div>
+
+              <div id="tab-two">
+                <!-- <h1 class="tab-heading">Favourites</h1> -->
+                <div class="pois-container" id="upcoming-list">
+                  <!-- <div class="poi">
+                    <img
+                      src="./../../assets/images/pois/buckingham-palace.jpg"
+                      alt=""
+                    />
+                    <div class="poi-info">
+                      <img
+                        id="favourites"
+                        src="./../../assets/images/profile/favourites.png"
+                        alt=""
+                      />
+                      <div class="card1-text">Seagull Hunt</div>
+                      <img
+                        src="./../../assets/images/profile/rating.png"
+                        alt=""
+                      />
+                    </div>
+                  </div> -->
+                </div>
+                <div class="footer ui-content">
+                  <div class="footer-logo-container center-column">
+                    <img
+                      class="footer-logo"
+                      src="./../../assets/images/logos/full logo white.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact-us-container">
+                    <div class="footer-heading-text">Contact Us</div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/phone-call.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;+44 7911 123456</span>
+                    </div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/mail.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;info@xploray.com</span>
+                    </div>
+                  </div>
+                  <div class="follow-us-container">
+                    <div class="footer-heading-text">Follow Us</div>
+                    <div class="center-vertically-margin-top">
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/facebook-logo.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/twitter-social-logotype.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/instagram-social-network-logo-of-photo-camera.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="newsletter-container">
+                    <div class="footer-heading-text">Newsletter</div>
+                    <div class="card2-text center-vertically-margin-top">
+                      Stay up to date on the latest hunts
+                    </div>
+                    <input type="text" />
+                    <button class="ui-btn subscribe-btn">SUBSCRIBE</button>
+                  </div>
+                  <div class="copyright-container center-column">
+                    <div class="footer-address-text">
+                      XPLORAYL . 31 Moulton Road Street . Guestling Thorn . TN35
+                      4YX UK
+                    </div>
+                    <div class="footer-copyright-text">
+                      Copyright ©️ 2020 All Rights Reserved
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="tab-three">
+                <!-- <h1 class="tab-heading">Favourites</h1> -->
+                <div class="pois-container" id="past-list">
+                  <!-- <div class="poi">
+                    <img
+                      src="./../../assets/images/pois/buckingham-palace.jpg"
+                      alt=""
+                    />
+                    <div class="poi-info">
+                      <img
+                        id="favourites"
+                        src="./../../assets/images/profile/favourites.png"
+                        alt=""
+                      />
+                      <div class="card1-text">Seagull Hunt</div>
+                      <img
+                        src="./../../assets/images/profile/rating.png"
+                        alt=""
+                      />
+                    </div>
+                  </div> -->
+                </div>
+                <div class="footer ui-content">
+                  <div class="footer-logo-container center-column">
+                    <img
+                      class="footer-logo"
+                      src="./../../assets/images/logos/full logo white.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact-us-container">
+                    <div class="footer-heading-text">Contact Us</div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/phone-call.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;+44 7911 123456</span>
+                    </div>
+                    <div class="center-vertically-margin-top">
+                      <img
+                        class="active-navbar-icon"
+                        src="./../../assets/icons/mail.svg"
+                        alt=""
+                      />
+                      <span class="card2-text">&nbsp;info@xploray.com</span>
+                    </div>
+                  </div>
+                  <div class="follow-us-container">
+                    <div class="footer-heading-text">Follow Us</div>
+                    <div class="center-vertically-margin-top">
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/facebook-logo.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/twitter-social-logotype.svg"
+                          alt=""
+                      /></a>
+                      <a href=""
+                        ><img
+                          src="./../../assets/icons/instagram-social-network-logo-of-photo-camera.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="newsletter-container">
+                    <div class="footer-heading-text">Newsletter</div>
+                    <div class="card2-text center-vertically-margin-top">
+                      Stay up to date on the latest hunts
+                    </div>
+                    <input type="text" />
+                    <button class="ui-btn subscribe-btn">SUBSCRIBE</button>
+                  </div>
+                  <div class="copyright-container center-column">
+                    <div class="footer-address-text">
+                      XPLORAYL . 31 Moulton Road Street . Guestling Thorn . TN35
+                      4YX UK
+                    </div>
+                    <div class="footer-copyright-text">
+                      Copyright ©️ 2020 All Rights Reserved
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header end -->
+
+          <!-- Footer start -->
+
+          <!-- Footer end -->
+          <!-- Navbar start -->
+          <div class="footer-navbar" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+              <ul>
+                <li>
+                  <a
+                    class="anchor-external nav-btn"
+                    href="./../explore/explore.html"
+                    data-prefetch="true"
+                    ><img src="./../../assets/icons/compass.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="anchor-external nav-btn"
+                    href="./../search/search.html"
+                    data-prefetch="true"
+                    ><img src="./../../assets/icons/search.svg" alt=""
+                  /></a>
+                </li>
+                <li class="center-column">
+                  <a class="nav-btn nav-btn-logo ui-btn-active" href="#">
+                    <div class="circle center-column circle-active">
+                      <img
+                        class="navbar-logo"
+                        src="./../../assets/icons/x white.svg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="nav-btn anchor-external"
+                    href="./../leaderboard/leaderboard.html"
+                    data-prefetch="true"
+                    ><img src="./../../assets/icons/bar-chart-2.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="nav-btn anchor-external"
+                    href="./../profile/profile.html"
+                    data-prefetch="true"
+                    ><img src="./../../assets/icons/user.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Navbar end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
